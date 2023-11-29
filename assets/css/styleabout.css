@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about__clm {
+    margin: 50px 135px 0;
+}
+
+.about__section {
+    border-bottom: 1px solid #ccc;
+}
+
+.ti-facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.ti-facebook:hover {
+    opacity: 0.9;    
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.fa-tiktok {
+    background-color: #000;
+    color: #fff;
+}
+
+.fa-tiktok:hover {
+    opacity: 0.9;
+    background-color: #000;
+    color: #fff;
+}
+
+.ti-youtube {
+    background-color: #cd201f;
+    color: #fff;
+}
+
+.ti-youtube:hover {
+    opacity: 0.9;
+    background-color: #cd201f;
+    color: #fff;
+}
+
+.about__section--heading {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about__section--icon-contact {
+    justify-content: flex-start;
+}
+
+.about__section--date {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #959595;
+}
+
+.about__section--desc {
+    font-size: 2rem;
+}
+
+.about__section .admin {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about__section--images {
+    display: flex;
+}
+
+.about__section .container-fluid .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__section--images figure {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figcaption-admin {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+

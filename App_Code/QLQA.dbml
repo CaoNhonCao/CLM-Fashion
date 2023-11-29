@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CLM" Class="QLQADataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-IRR4A5V4\DIMAN;Initial Catalog=CLM;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CLMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DANHMUCQUANAO" Member="DANHMUCQUANAOs">
+    <Type Name="DANHMUCQUANAO">
+      <Column Name="IdDanhMuc" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDanhMuc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ViTri" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="DANHMUCQUANAO_QuanAo" Member="QuanAos" ThisKey="IdDanhMuc" OtherKey="IdDanhMuc" Type="QuanAo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LienHe" Member="LienHes">
+    <Type Name="LienHe">
+      <Column Name="IdLienHe" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="Char(50)" CanBeNull="true" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TuKhoa" Member="TuKhoas">
+    <Type Name="TuKhoa">
+      <Column Name="IdTuKhoa" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="TenTuKhoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ViTri" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DatHang" Member="DatHangs">
+    <Type Name="DatHang">
+      <Column Name="IdHoaDon" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenKhach" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SoDT" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="IdQuanAo" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="QuanAo_DatHang" Member="QuanAo" ThisKey="IdQuanAo" OtherKey="IdQuanAo" Type="QuanAo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuanAo" Member="QuanAos">
+    <Type Name="QuanAo">
+      <Column Name="IdQuanAo" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenQuanAo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Gia" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="XuHuong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="IdDanhMuc" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="LuotXem" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DanhGia" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="KhuyenMai" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="GiaGoc" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="PTGiam" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Hot" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="QuanAo_DatHang" Member="DatHangs" ThisKey="IdQuanAo" OtherKey="IdQuanAo" Type="DatHang" />
+      <Association Name="DANHMUCQUANAO_QuanAo" Member="DANHMUCQUANAO" ThisKey="IdDanhMuc" OtherKey="IdDanhMuc" Type="DANHMUCQUANAO" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

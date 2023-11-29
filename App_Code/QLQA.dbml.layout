@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.125, 8.5" name="QLQA">
+  <DataContextMoniker Name="/QLQADataContext" />
+  <nestedChildShapes>
+    <classShape Id="70759810-7e17-420f-a04e-53014aa36efb" absoluteBounds="0.75, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/QLQADataContext/DANHMUCQUANAO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8738115a-955b-4f9b-bcb9-2a5a5342b6ab" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb63575f-21ce-43f0-a9fd-83125e52f345" absoluteBounds="8.875, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLQADataContext/LienHe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="613637f9-a45b-4ae2-aa9f-0e48fcdae5da" absoluteBounds="8.89, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5738e8c-45b2-4b79-a81a-7d056e4e1c94" absoluteBounds="7.875, 3.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/QLQADataContext/TuKhoa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29b1f143-4283-420b-a6b8-cd5f79441eb3" absoluteBounds="7.8900000000000006, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1885f97-d09a-4433-b016-adde45cad7f2" absoluteBounds="6.375, 1.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QLQADataContext/DatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b143e00-7bd0-4832-865c-dd1fc865bad7" absoluteBounds="6.39, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ce6c3d9-6aa8-4cf7-892d-dcdf09267370" absoluteBounds="3.75, 1.625, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/QLQADataContext/QuanAo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48105f24-f7d9-4537-8c8b-af2c4d5c3a19" absoluteBounds="3.7649999999999997, 2.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 2.51524983723958); (6.375 : 2.51524983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLQADataContext/QuanAo/QuanAo_DatHang" />
+      <nodes>
+        <classShapeMoniker Id="3ce6c3d9-6aa8-4cf7-892d-dcdf09267370" />
+        <classShapeMoniker Id="e1885f97-d09a-4433-b016-adde45cad7f2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.19314697265625); (3.75 : 2.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLQADataContext/DANHMUCQUANAO/DANHMUCQUANAO_QuanAo" />
+      <nodes>
+        <classShapeMoniker Id="70759810-7e17-420f-a04e-53014aa36efb" />
+        <classShapeMoniker Id="3ce6c3d9-6aa8-4cf7-892d-dcdf09267370" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

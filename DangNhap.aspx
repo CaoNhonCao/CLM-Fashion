@@ -1,0 +1,18 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CLM.master" AutoEventWireup="true" CodeFile="DangNhap.aspx.cs" Inherits="DangNhap" %>
+
+<%@ Register src="UserUI/Loggof.ascx" tagname="Loggof" tagprefix="uc1" %>
+<%@ Register src="UserUI/Menu.ascx" tagname="Menu" tagprefix="uc2" %>
+<%@ Register src="UserUI/Footer.ascx" tagname="Footer" tagprefix="uc3" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder3" Runat="Server">
+    <uc1:Loggof ID="Loggof1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="ContentPlaceHolder5" Runat="Server">
+</asp:Content>
+
